@@ -1,0 +1,122 @@
+/* 全局样式 */
+body {
+    background-color: #f8f9fa;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 导航栏样式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* 卡片样式 */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    border-bottom: none;
+    font-weight: 600;
+}
+
+/* 按钮样式 */
+.btn {
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+}
+
+/* 表单样式 */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.15);
+}
+
+/* 功能图标样式 */
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+}
+
+/* 分析结果样式 */
+.analysis-section {
+    margin-bottom: 2rem;
+}
+
+.hexagram-symbol {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.result-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* 加载动画样式 */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #dee2e6;
+    }
+    
+    .card-header {
+        background-color: #f8f9fa !important;
+        color: #000 !important;
+    }
+    
+    body {
+        background-color: white;
+    }
+}
